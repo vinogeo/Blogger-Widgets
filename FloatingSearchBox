@@ -1,0 +1,47 @@
+<style type='text/css'>
+/*<![CDATA[*/
+#sbutton {
+background: -moz-linear-gradient(center top , #4D90FE 0%, #4787ED 100%) repeat scroll 0pt 0pt transparent;background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d90fe), color-stop(100%,#4787ed));
+background: -webkit-linear-gradient(top, #4d90fe 0%,#4787ed 100%);
+background: -o-linear-gradient(top, #4d90fe 0%,#4787ed 100%);
+background: -ms-linear-gradient(top, #4d90fe 0%,#4787ed 100%);
+background: linear-gradient(top, #4d90fe 0%,#4787ed 100%);background-color: #4d90fe;
+border: 1px solid #3079ED;
+border-radius: 2px 2px 2px 2px;
+color: #FFFFFF;
+height: 27px;
+min-width: 76px;
+padding: 0 21px;padding-bottom: 2px;
+}
+#sbutton:hover{    background-color: #357AE8;
+background-image: -moz-linear-gradient(center top , #4D90FE, #357AE8);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d90fe), color-stop(100%,#357ae8));
+background: -webkit-linear-gradient(top, #4d90fe 0%,#357ae8 100%);
+background: -o-linear-gradient(top, #4d90fe 0%,#357ae8 100%);
+background: -ms-linear-gradient(top, #4d90fe 0%,#357ae8 100%);
+background: linear-gradient(top, #4d90fe 0%,#357ae8 100%);
+border: 1px solid #2F5BB7;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
+#simg {
+background: url("http://3.bp.blogspot.com/-63J57J-qaOM/UUH3C5D53uI/AAAAAAAAAFM/2kRDRiGrl5Y/s1600/searchicon.png") no-repeat scroll 0 0 transparent;
+display: inline-block;
+height: 14px;
+margin: 0;
+width: 17px;z-index:101;
+}#s:hover {box-shadow: 0 1px 2px #C1C1C1 inset;}
+#s {border: 1px solid #BCBCBC;border-radius: 4px 4px 4px 4px;font: italic 14px times New Roman;padding: 4px 2px;width: 146px; -moz-transition: width 0.2s ease-in 0s; -webkit-transition: width 0.2s ease-in; -o-transition: width 0.2s ease-in;}
+#s:focus {width: 200px;}
+.noop-searchbox {
+display: block;
+position: fixed;
+right: 12px;
+bottom: 1%;
+max-width: 300px;min-width: 238px;
+z-index: 100;
+}
+/*]]>*/
+</style>
+<div class='noop-searchbox' id='noop-searchbox'>
+<form action='/search' id='noop-searchform' method='get'>
+<input id='s' name='q' onblur='if (this.value == "") {this.value = "Search...";}' onfocus='if (this.value == "Search...") {this.value = ""}' type='text' value='Search...' x-webkit-speech/>
+<button id='sbutton' type='submit'><span id='simg'></span></button>
+</form></div>
